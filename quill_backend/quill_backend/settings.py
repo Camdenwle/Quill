@@ -42,10 +42,11 @@ INSTALLED_APPS = [
     'ContractDatabase',
 
     'rest_framework',
+    'rest_framework.authtoken', 
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'corsheaders',
+
 
 
 ]
@@ -59,12 +60,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'corsheaders.middleware.CorsMiddleware',
 
 ]
 
-REST_FRAMEWORK = {'DEFAULT_PERMISSION_CLASSES' : [
-    'rest_framework.permissions.AllowAny'
+REST_FRAMEWORK = {'DEFAULT_AUTHENTICATION_CLASSES' : [
+    'rest_framework.authentication.BasicAuthentication',
+    'rest_framework.authentication.SessionAuthentication',
+    'rest_framework.authentication.TokenAuthentication',
 ]}
 
 CORS_ORIGIN_ALLOW_ALL = True

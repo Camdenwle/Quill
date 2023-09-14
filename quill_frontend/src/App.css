@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+
+
+
+body {
+    background-color: #000;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+    max-width: '100%';
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Mulish', sans-serif;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#header {
+    font-size: xx-large;
+    font-family: 'Playfair Display', serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#login {
+    text-decoration: none;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bigtext {
+    font-size: 75px;
+    font-family: 'Mulish', sans-serif;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#center-word {
+    color: #89CFF0;
 }
+
+.graphic {
+    display: flex;
+    padding-left: 225px;
+    padding-top: 70px;
+}
+
+.box {
+    display: flex;
+    border: 30px solid white;
+    height: 280px;
+    width: 700px;
+    margin-left: 50px;
+    margin-top: 25px;
+
+}
+
+.signature {
+    position: fixed;
+    stroke: white;
+    stroke-width: 3px;
+    stroke-dasharray: 3979.694580078125px;
+    stroke-dashoffset: 3979.694580078125px;
+    animation: LineAnimation 2.5s ease forwards;
+    animation-delay: 0.5s;
+    height: 275px;
+    right: -72px;
+    top: 238px;
+}
+
+@keyframes LineAnimation {
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
+
+.description {
+    margin-left: 225px;
+    font-family: 'Mulish', sans-serif;
+    width: 50%;
+}
+
+.build {
+    text-align: center;
+    margin-left: 225px;
+    margin-top: 40px;
+    background-color: #89CFF0;
+    height: 35px;
+    width: 10%;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 17px;
+    padding-top: 5px;
+    font-family: 'Mulish', sans-serif;
+
+}
+
